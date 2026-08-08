@@ -25,8 +25,7 @@
       }
     }
   </script>
-
-  <style>
+<style>
     :root {
       --gaya-font: "Nunito Sans", sans-serif;
       --gaya-font2: "Caveat", cursive;
@@ -99,15 +98,14 @@
       object-fit: contain;
     }
 
-#content {
-    position: relative;
-    z-index: 10;
-    opacity: 0;
-    margin-top: 50px;
-    width: 100%;
-    min-height: 180px;
-    height: auto;
-    transition: all 0.7s ease;
+    #content {
+      position: relative;
+      z-index: 10;
+      opacity: 0;
+      margin-top: 50px;
+      width: 100%;
+      height: 180px;
+      transition: all 0.7s ease;
     }
     #content > * {
       display: flex;
@@ -168,28 +166,18 @@
     #slider div img { width: 80px; height: 80px; margin-bottom: 20px; border-radius: 12px; }
 
     blockquote {
-position: absolute;
-    top: 50%;
-    left: 50%;
-
-    opacity: 0;
-    visibility: hidden;
-
-    transform: translate(-50%, -50%) scale(0.1);
-    transition: all 0.7s ease;
-
-    margin: 0;
-    color: var(--tombol-teks);
-
-    text-shadow: 0px 2px 2px rgba(0,0,0,0.8);
-
-    width: min(90vw, 500px);
-    max-height: 70vh;
-    overflow-y: auto;
-
-    text-align: center;
-    line-height: 1.3em;
-    padding: 0;
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(0.1);
+      transition: all 0.7s ease;
+      margin: 0;
+      color: var(--tombol-teks);
+      text-shadow: 0px 2px 2px rgba(0,0,0,0.8);
+      width: 400px;
+      text-align: center;
+      line-height: 1.3em;
+      padding: 0;
     }
     blockquote p {
       font-size: 15px;
@@ -211,11 +199,6 @@ position: absolute;
       transform: scale(0);
       transition: all 0.8s ease;
     }
-    blockquote.visible {
-    opacity: 1;
-    visibility: visible;
-    transform: translate(-50%, -50%) scale(1);
-}
 
     #button {
       position: relative;
